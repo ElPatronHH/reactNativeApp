@@ -11,9 +11,11 @@ import {
 import Lista from "./components/Lista";
 import * as ImagePicker from "expo-image-picker";
 import { Permissions } from 'expo-permissions';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
-import { firebaseConfig } from './firebase-config';
-import { initializeApp } from 'firebase/app';
+
+import * as firebase from "firebase";
+
+
+
 
 export default function App() {
   const [nombreValue, setNombre] = useState("");
